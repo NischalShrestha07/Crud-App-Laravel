@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <h1>edit a Product</h1>
+    <h1>Edit a Product</h1>
     <div>
         @if($errors->any())
         <ul>
@@ -43,7 +43,7 @@
             <input type=" text" name="description" placeholder="Description" value="{{$product->description}}">
         </div>
         <div>
-            <input type=" submit" value="Save a New Product">
+            <button style="width:100px; padding:10px" type="submit">Update</button>
         </div>
     </form>
 
