@@ -20,7 +20,7 @@ class ProductController extends Controller
         $data = $request->validate([
             'name' => 'required',
             'qty' => 'required|numeric',
-            'price' => 'required|decimal:2',
+            'price' => 'required|decimal:0,2',
             'description' => 'nullable'
         ]);
 
