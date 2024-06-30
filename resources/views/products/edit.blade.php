@@ -22,9 +22,9 @@
         </ul>
         @endif
     </div>
-    <form method="put" action="">
+    <form method="post" action="{{route('product.update',['product'=>$product])}}">
         @csrf
-        @method('post')
+        @method('put')
 
         <div>
             <label for="">Name</label>
