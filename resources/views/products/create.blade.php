@@ -10,7 +10,10 @@
 
 <body>
     <h1>Create a Product</h1>
-    <form method="post" action="">
+    <form method="post" action="{{route('product.store')}}">
+        @csrf
+        @method('post')
+
         <div>
             <label for="">Name</label>
             <input type="text" name="name" placeholder="Name">
